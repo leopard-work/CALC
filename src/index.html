@@ -15,44 +15,51 @@
                     <div class="v2-calc-block">
                         <div class="v2-calc-item">
                             <div class="v2-calc-item-title">Вид уборки</div>
-                            <select class="v2-calc-select">
-                                <option>Генеральная</option>
-                                <option>Генеральная 3</option>
-                                <option>Генеральная 4</option>
-                                <option>Генеральная 5</option>
-                                <option>Генеральная 6</option>
+                            <select class="v2-calc-select" name="kitchen-size">
+                                <option data-val="0" value="Выбрать">Выбрать</option>
+                                <option data-val="95" value="Генеральная">Генеральная</option>
+                                <option data-val="100" value="После ремонта">После ремонта</option>
+                                <option data-val="60" value="Экспресс">Экспресс</option>
+                                <option data-val="50" value="Регулярная">Регулярная</option>
+                                <option data-val="350" value="После пожара">После пожара</option>
+                                <option data-val="40" value="Фасады, остекление">Фасады, остекление</option>
+                                <option data-val="125" value="Химчистка ковролина">Химчистка ковролина</option>
                             </select>
                         </div>
                         <div class="v2-calc-item">
                             <div class="v2-calc-item-title">Площадь помещения</div>
                             <div class="v2-calc-item-btns">
-                                <button class="v2-calc-item-btn">
+                                <button class="v2-calc-item-btn v2-calc-minus">
                                     <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.959961 1.96013H15.0399C15.5702 1.96013 16 1.53032 16 0.999897C16 0.469601 15.5703 0.0397949 15.0399 0.0397949H0.959961C0.429802 0.0399263 0 0.469733 0 1.00003C0 1.53032 0.429802 1.96013 0.959961 1.96013Z" fill="white"/> </svg>
                                 </button>
-                                <input type="text" min="0" class="v2-calc-item-inp" value="0">
-                                <button class="v2-calc-item-btn">
+                                <input type="text" name="clean-area" class="v2-calc-item-inp" value="5">
+                                <button class="v2-calc-item-btn v2-calc-plus">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M16.15 7.65H9.35005V0.849948C9.35005 0.38085 8.9692 0 8.49995 0C8.03085 0 7.65 0.38085 7.65 0.849948V7.65H0.849948C0.38085 7.65 0 8.03085 0 8.49995C0 8.9692 0.38085 9.35005 0.849948 9.35005H7.65V16.15C7.65 16.6192 8.03085 17.0001 8.49995 17.0001C8.9692 17.0001 9.35005 16.6192 9.35005 16.15V9.35005H16.15C16.6192 9.35005 17.0001 8.9692 17.0001 8.49995C17.0001 8.03085 16.6192 7.65 16.15 7.65Z" fill="white"/></g></svg>
                                 </button>
                             </div>
                         </div>
                         <div class="v2-calc-item">
                             <div class="v2-calc-item-title">Количество комнат</div>
-                            <select class="v2-calc-select">
-                                <option>2 комнаты</option>
-                                <option>2 комнаты</option>
-                                <option>2 комнаты</option>
-                                <option>2 комнаты</option>
-                                <option>2 комнаты</option>
+                            <select class="v2-calc-select" name="kitchen-size2">
+                                <option value="0" selected>Выбрать</option>
+                                <option value="1">Квартира студия</option>
+                                <option value="1">Одна комната</option>
+                                <option value="2">Две комнаты</option>
+                                <option value="3">Три комнаты</option>
+                                <option value="4">Четыре комнаты</option>
+                                <option value="5">Пять комнат</option>
+                                <option value="5+">Больше пяти комнат</option>
+                                <option value="BIG">Большое помещение</option>
                             </select>
                         </div>
                         <div class="v2-calc-item">
                             <div class="v2-calc-item-title">Количество санузлов</div>
                             <div class="v2-calc-item-btns">
-                                <button class="v2-calc-item-btn">
+                                <button class="v2-calc-item-btn v2-calc-minus">
                                     <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.959961 1.96013H15.0399C15.5702 1.96013 16 1.53032 16 0.999897C16 0.469601 15.5703 0.0397949 15.0399 0.0397949H0.959961C0.429802 0.0399263 0 0.469733 0 1.00003C0 1.53032 0.429802 1.96013 0.959961 1.96013Z" fill="white"/> </svg>
                                 </button>
-                                <input type="text" min="0" class="v2-calc-item-inp" value="0">
-                                <button class="v2-calc-item-btn">
+                                <input name="kitchen-size3" type="text" min="0" class="v2-calc-item-inp" value="1">
+                                <button class="v2-calc-item-btn v2-calc-plus">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M16.15 7.65H9.35005V0.849948C9.35005 0.38085 8.9692 0 8.49995 0C8.03085 0 7.65 0.38085 7.65 0.849948V7.65H0.849948C0.38085 7.65 0 8.03085 0 8.49995C0 8.9692 0.38085 9.35005 0.849948 9.35005H7.65V16.15C7.65 16.6192 8.03085 17.0001 8.49995 17.0001C8.9692 17.0001 9.35005 16.6192 9.35005 16.15V9.35005H16.15C16.6192 9.35005 17.0001 8.9692 17.0001 8.49995C17.0001 8.03085 16.6192 7.65 16.15 7.65Z" fill="white"/></g></svg>
                                 </button>
                             </div>
@@ -60,11 +67,11 @@
                         <div class="v2-calc-item">
                             <div class="v2-calc-item-title">Окна (1 створка)</div>
                             <div class="v2-calc-item-btns">
-                                <button class="v2-calc-item-btn">
+                                <button class="v2-calc-item-btn v2-calc-minus">
                                     <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.959961 1.96013H15.0399C15.5702 1.96013 16 1.53032 16 0.999897C16 0.469601 15.5703 0.0397949 15.0399 0.0397949H0.959961C0.429802 0.0399263 0 0.469733 0 1.00003C0 1.53032 0.429802 1.96013 0.959961 1.96013Z" fill="white"/> </svg>
                                 </button>
-                                <input type="text" min="0" class="v2-calc-item-inp" value="0">
-                                <button class="v2-calc-item-btn">
+                                <input type="text" name="w1" class="v2-calc-item-inp" value="0">
+                                <button class="v2-calc-item-btn v2-calc-plus">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M16.15 7.65H9.35005V0.849948C9.35005 0.38085 8.9692 0 8.49995 0C8.03085 0 7.65 0.38085 7.65 0.849948V7.65H0.849948C0.38085 7.65 0 8.03085 0 8.49995C0 8.9692 0.38085 9.35005 0.849948 9.35005H7.65V16.15C7.65 16.6192 8.03085 17.0001 8.49995 17.0001C8.9692 17.0001 9.35005 16.6192 9.35005 16.15V9.35005H16.15C16.6192 9.35005 17.0001 8.9692 17.0001 8.49995C17.0001 8.03085 16.6192 7.65 16.15 7.65Z" fill="white"/></g></svg>
                                 </button>
                             </div>
@@ -72,11 +79,11 @@
                         <div class="v2-calc-item">
                             <div class="v2-calc-item-title">Окна (2 створки)</div>
                             <div class="v2-calc-item-btns">
-                                <button class="v2-calc-item-btn">
+                                <button class="v2-calc-item-btn v2-calc-minus">
                                     <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.959961 1.96013H15.0399C15.5702 1.96013 16 1.53032 16 0.999897C16 0.469601 15.5703 0.0397949 15.0399 0.0397949H0.959961C0.429802 0.0399263 0 0.469733 0 1.00003C0 1.53032 0.429802 1.96013 0.959961 1.96013Z" fill="white"/> </svg>
                                 </button>
-                                <input type="text" min="0" class="v2-calc-item-inp" value="0">
-                                <button class="v2-calc-item-btn">
+                                <input type="text" name="w2" class="v2-calc-item-inp" value="0">
+                                <button class="v2-calc-item-btn v2-calc-plus">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M16.15 7.65H9.35005V0.849948C9.35005 0.38085 8.9692 0 8.49995 0C8.03085 0 7.65 0.38085 7.65 0.849948V7.65H0.849948C0.38085 7.65 0 8.03085 0 8.49995C0 8.9692 0.38085 9.35005 0.849948 9.35005H7.65V16.15C7.65 16.6192 8.03085 17.0001 8.49995 17.0001C8.9692 17.0001 9.35005 16.6192 9.35005 16.15V9.35005H16.15C16.6192 9.35005 17.0001 8.9692 17.0001 8.49995C17.0001 8.03085 16.6192 7.65 16.15 7.65Z" fill="white"/></g></svg>
                                 </button>
                             </div>
@@ -84,11 +91,11 @@
                         <div class="v2-calc-item">
                             <div class="v2-calc-item-title">Окна (3 створки)</div>
                             <div class="v2-calc-item-btns">
-                                <button class="v2-calc-item-btn">
+                                <button class="v2-calc-item-btn v2-calc-minus">
                                     <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.959961 1.96013H15.0399C15.5702 1.96013 16 1.53032 16 0.999897C16 0.469601 15.5703 0.0397949 15.0399 0.0397949H0.959961C0.429802 0.0399263 0 0.469733 0 1.00003C0 1.53032 0.429802 1.96013 0.959961 1.96013Z" fill="white"/> </svg>
                                 </button>
-                                <input type="text" min="0" class="v2-calc-item-inp" value="0">
-                                <button class="v2-calc-item-btn">
+                                <input type="text" name="w3" class="v2-calc-item-inp" value="0">
+                                <button class="v2-calc-item-btn v2-calc-plus">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M16.15 7.65H9.35005V0.849948C9.35005 0.38085 8.9692 0 8.49995 0C8.03085 0 7.65 0.38085 7.65 0.849948V7.65H0.849948C0.38085 7.65 0 8.03085 0 8.49995C0 8.9692 0.38085 9.35005 0.849948 9.35005H7.65V16.15C7.65 16.6192 8.03085 17.0001 8.49995 17.0001C8.9692 17.0001 9.35005 16.6192 9.35005 16.15V9.35005H16.15C16.6192 9.35005 17.0001 8.9692 17.0001 8.49995C17.0001 8.03085 16.6192 7.65 16.15 7.65Z" fill="white"/></g></svg>
                                 </button>
                             </div>
@@ -96,11 +103,11 @@
                         <div class="v2-calc-item">
                             <div class="v2-calc-item-title">Створка на балконе</div>
                             <div class="v2-calc-item-btns">
-                                <button class="v2-calc-item-btn">
+                                <button class="v2-calc-item-btn v2-calc-minus">
                                     <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.959961 1.96013H15.0399C15.5702 1.96013 16 1.53032 16 0.999897C16 0.469601 15.5703 0.0397949 15.0399 0.0397949H0.959961C0.429802 0.0399263 0 0.469733 0 1.00003C0 1.53032 0.429802 1.96013 0.959961 1.96013Z" fill="white"/> </svg>
                                 </button>
-                                <input type="text" min="0" class="v2-calc-item-inp" value="0">
-                                <button class="v2-calc-item-btn">
+                                <input type="text" name="w4" class="v2-calc-item-inp" value="0">
+                                <button class="v2-calc-item-btn v2-calc-plus">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M16.15 7.65H9.35005V0.849948C9.35005 0.38085 8.9692 0 8.49995 0C8.03085 0 7.65 0.38085 7.65 0.849948V7.65H0.849948C0.38085 7.65 0 8.03085 0 8.49995C0 8.9692 0.38085 9.35005 0.849948 9.35005H7.65V16.15C7.65 16.6192 8.03085 17.0001 8.49995 17.0001C8.9692 17.0001 9.35005 16.6192 9.35005 16.15V9.35005H16.15C16.6192 9.35005 17.0001 8.9692 17.0001 8.49995C17.0001 8.03085 16.6192 7.65 16.15 7.65Z" fill="white"/></g></svg>
                                 </button>
                             </div>
@@ -110,20 +117,21 @@
                         <div class="v2-calc-item">
                             <div class="v2-calc-item-title">Количество люстр</div>
                             <div class="v2-calc-item-btns">
-                                <button class="v2-calc-item-btn">
+                                <button class="v2-calc-item-btn v2-calc-minus">
                                     <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.959961 1.96013H15.0399C15.5702 1.96013 16 1.53032 16 0.999897C16 0.469601 15.5703 0.0397949 15.0399 0.0397949H0.959961C0.429802 0.0399263 0 0.469733 0 1.00003C0 1.53032 0.429802 1.96013 0.959961 1.96013Z" fill="white"/> </svg>
                                 </button>
-                                <input type="text" min="0" class="v2-calc-item-inp" value="0">
-                                <button class="v2-calc-item-btn">
+                                <input type="text" name="chandeliers" class="v2-calc-item-inp" value="0">
+                                <button class="v2-calc-item-btn v2-calc-plus">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M16.15 7.65H9.35005V0.849948C9.35005 0.38085 8.9692 0 8.49995 0C8.03085 0 7.65 0.38085 7.65 0.849948V7.65H0.849948C0.38085 7.65 0 8.03085 0 8.49995C0 8.9692 0.38085 9.35005 0.849948 9.35005H7.65V16.15C7.65 16.6192 8.03085 17.0001 8.49995 17.0001C8.9692 17.0001 9.35005 16.6192 9.35005 16.15V9.35005H16.15C16.6192 9.35005 17.0001 8.9692 17.0001 8.49995C17.0001 8.03085 16.6192 7.65 16.15 7.65Z" fill="white"/></g></svg>
                                 </button>
                             </div>
                         </div>
                         <div class="v2-calc-item">
                             <div class="v2-calc-item-title">Степерь загрязнения</div>
+                            <input type="hidden" name="level" value="1" placeholder="">
                             <div class="v2-calc-item-stars">
                                 <svg class="active" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M52.8618 20.3308C52.5149 19.2576 51.563 18.4954 50.4369 18.3939L35.1396 17.0049L29.0907 2.84672C28.6446 1.80911 27.6289 1.13745 26.5003 1.13745C25.3717 1.13745 24.3559 1.80911 23.9099 2.84914L17.8609 17.0049L2.56126 18.3939C1.43712 18.4978 0.487662 19.2576 0.138692 20.3308C-0.210278 21.404 0.112003 22.5811 0.96239 23.3231L12.5253 33.4639L9.11567 48.4833C8.86617 49.5876 9.2948 50.7292 10.2111 51.3915C10.7036 51.7474 11.2798 51.9285 11.8609 51.9285C12.3619 51.9285 12.8589 51.7935 13.3049 51.5266L26.5003 43.6402L39.6908 51.5266C40.656 52.1073 41.8727 52.0543 42.787 51.3915C43.7037 50.7272 44.1319 49.5852 43.8824 48.4833L40.4728 33.4639L52.0357 23.3251C52.8861 22.5811 53.2108 21.406 52.8618 20.3308Z" fill="#E1E1E1"/></g></svg>
-                                <svg class="active" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M52.8618 20.3308C52.5149 19.2576 51.563 18.4954 50.4369 18.3939L35.1396 17.0049L29.0907 2.84672C28.6446 1.80911 27.6289 1.13745 26.5003 1.13745C25.3717 1.13745 24.3559 1.80911 23.9099 2.84914L17.8609 17.0049L2.56126 18.3939C1.43712 18.4978 0.487662 19.2576 0.138692 20.3308C-0.210278 21.404 0.112003 22.5811 0.96239 23.3231L12.5253 33.4639L9.11567 48.4833C8.86617 49.5876 9.2948 50.7292 10.2111 51.3915C10.7036 51.7474 11.2798 51.9285 11.8609 51.9285C12.3619 51.9285 12.8589 51.7935 13.3049 51.5266L26.5003 43.6402L39.6908 51.5266C40.656 52.1073 41.8727 52.0543 42.787 51.3915C43.7037 50.7272 44.1319 49.5852 43.8824 48.4833L40.4728 33.4639L52.0357 23.3251C52.8861 22.5811 53.2108 21.406 52.8618 20.3308Z" fill="#E1E1E1"/></g></svg>
+                                <svg viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M52.8618 20.3308C52.5149 19.2576 51.563 18.4954 50.4369 18.3939L35.1396 17.0049L29.0907 2.84672C28.6446 1.80911 27.6289 1.13745 26.5003 1.13745C25.3717 1.13745 24.3559 1.80911 23.9099 2.84914L17.8609 17.0049L2.56126 18.3939C1.43712 18.4978 0.487662 19.2576 0.138692 20.3308C-0.210278 21.404 0.112003 22.5811 0.96239 23.3231L12.5253 33.4639L9.11567 48.4833C8.86617 49.5876 9.2948 50.7292 10.2111 51.3915C10.7036 51.7474 11.2798 51.9285 11.8609 51.9285C12.3619 51.9285 12.8589 51.7935 13.3049 51.5266L26.5003 43.6402L39.6908 51.5266C40.656 52.1073 41.8727 52.0543 42.787 51.3915C43.7037 50.7272 44.1319 49.5852 43.8824 48.4833L40.4728 33.4639L52.0357 23.3251C52.8861 22.5811 53.2108 21.406 52.8618 20.3308Z" fill="#E1E1E1"/></g></svg>
                                 <svg viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M52.8618 20.3308C52.5149 19.2576 51.563 18.4954 50.4369 18.3939L35.1396 17.0049L29.0907 2.84672C28.6446 1.80911 27.6289 1.13745 26.5003 1.13745C25.3717 1.13745 24.3559 1.80911 23.9099 2.84914L17.8609 17.0049L2.56126 18.3939C1.43712 18.4978 0.487662 19.2576 0.138692 20.3308C-0.210278 21.404 0.112003 22.5811 0.96239 23.3231L12.5253 33.4639L9.11567 48.4833C8.86617 49.5876 9.2948 50.7292 10.2111 51.3915C10.7036 51.7474 11.2798 51.9285 11.8609 51.9285C12.3619 51.9285 12.8589 51.7935 13.3049 51.5266L26.5003 43.6402L39.6908 51.5266C40.656 52.1073 41.8727 52.0543 42.787 51.3915C43.7037 50.7272 44.1319 49.5852 43.8824 48.4833L40.4728 33.4639L52.0357 23.3251C52.8861 22.5811 53.2108 21.406 52.8618 20.3308Z" fill="#E1E1E1"/></g></svg>
                                 <svg viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M52.8618 20.3308C52.5149 19.2576 51.563 18.4954 50.4369 18.3939L35.1396 17.0049L29.0907 2.84672C28.6446 1.80911 27.6289 1.13745 26.5003 1.13745C25.3717 1.13745 24.3559 1.80911 23.9099 2.84914L17.8609 17.0049L2.56126 18.3939C1.43712 18.4978 0.487662 19.2576 0.138692 20.3308C-0.210278 21.404 0.112003 22.5811 0.96239 23.3231L12.5253 33.4639L9.11567 48.4833C8.86617 49.5876 9.2948 50.7292 10.2111 51.3915C10.7036 51.7474 11.2798 51.9285 11.8609 51.9285C12.3619 51.9285 12.8589 51.7935 13.3049 51.5266L26.5003 43.6402L39.6908 51.5266C40.656 52.1073 41.8727 52.0543 42.787 51.3915C43.7037 50.7272 44.1319 49.5852 43.8824 48.4833L40.4728 33.4639L52.0357 23.3251C52.8861 22.5811 53.2108 21.406 52.8618 20.3308Z" fill="#E1E1E1"/></g></svg>
                                 <svg viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M52.8618 20.3308C52.5149 19.2576 51.563 18.4954 50.4369 18.3939L35.1396 17.0049L29.0907 2.84672C28.6446 1.80911 27.6289 1.13745 26.5003 1.13745C25.3717 1.13745 24.3559 1.80911 23.9099 2.84914L17.8609 17.0049L2.56126 18.3939C1.43712 18.4978 0.487662 19.2576 0.138692 20.3308C-0.210278 21.404 0.112003 22.5811 0.96239 23.3231L12.5253 33.4639L9.11567 48.4833C8.86617 49.5876 9.2948 50.7292 10.2111 51.3915C10.7036 51.7474 11.2798 51.9285 11.8609 51.9285C12.3619 51.9285 12.8589 51.7935 13.3049 51.5266L26.5003 43.6402L39.6908 51.5266C40.656 52.1073 41.8727 52.0543 42.787 51.3915C43.7037 50.7272 44.1319 49.5852 43.8824 48.4833L40.4728 33.4639L52.0357 23.3251C52.8861 22.5811 53.2108 21.406 52.8618 20.3308Z" fill="#E1E1E1"/></g></svg>
@@ -132,14 +140,14 @@
                         <div class="v2-calc-item-big">
                             <div class="v2-calc-item-title">Услуги за доплату</div>
                             <div class="v2-calc-item-checks">
-                                <div class="v2-calc-item-check"><label><input type="checkbox"><span>Мойка плиты</span></label></div>
-                                <div class="v2-calc-item-check"><label><input type="checkbox"><span>Мойка духовки</span></label></div>
-                                <div class="v2-calc-item-check"><label><input type="checkbox"><span>Мойка вытяжки</span></label></div>
-                                <div class="v2-calc-item-check"><label><input type="checkbox"><span>Мойка свч печи</span></label></div>
-                                <div class="v2-calc-item-check"><label><input type="checkbox"><span>Холодильник</span></label></div>
-                                <div class="v2-calc-item-check"><label><input type="checkbox"><span>Химчистка мебели</span></label></div>
-                                <div class="v2-calc-item-check"><label><input type="checkbox"><span>Мытьё мебели</span></label></div>
-                                <div class="v2-calc-item-check"><label><input type="checkbox"><span>Срочный заказ</span></label></div>
+                                <div class="v2-calc-item-check"><label><input name="f1" type="checkbox"><span>Мойка плиты</span></label></div>
+                                <div class="v2-calc-item-check"><label><input name="f2" type="checkbox"><span>Мойка духовки</span></label></div>
+                                <div class="v2-calc-item-check"><label><input name="f3" type="checkbox"><span>Мойка вытяжки</span></label></div>
+                                <div class="v2-calc-item-check"><label><input name="f4" type="checkbox"><span>Мойка свч печи</span></label></div>
+                                <div class="v2-calc-item-check"><label><input name="f5" type="checkbox"><span>Холодильник</span></label></div>
+                                <div class="v2-calc-item-check"><label><input name="f6" type="checkbox"><span>Химчистка мебели</span></label></div>
+                                <div class="v2-calc-item-check"><label><input name="f7" type="checkbox"><span>Мытьё мебели</span></label></div>
+                                <div class="v2-calc-item-check"><label><input name="f8" type="checkbox"><span>Срочный заказ</span></label></div>
                             </div>
                         </div>
                         <div class="v2-calc-item v2-calc-item-date">
@@ -158,63 +166,64 @@
                         </div>
                         <div class="v2-calc-result-content">
                             <div class="v2-calc-result-item">
-                                <p class="v2-calc-result-title-left"><strong>Генеральная уборка</strong></p>
+                                <p class="v2-calc-result-title-left"><strong id="calc3_tp">Выберите вид уборки</strong></p>
                                 <p class="v2-calc-result-title-middle"></p>
                                 <p class="v2-calc-result-title-right"></p>
                             </div>
                             <div class="v2-calc-result-item">
                                 <p class="v2-calc-result-title-left">Загрязненность</p>
-                                <p class="v2-calc-result-title-middle">3</p>
+                                <p class="v2-calc-result-title-middle" id="calc3_level">1</p>
                                 <p class="v2-calc-result-title-right"></p>
                             </div>
                             <div class="v2-calc-result-item">
                                 <p class="v2-calc-result-title-left">Комнат</p>
-                                <p class="v2-calc-result-title-middle">2</p>
+                                <p class="v2-calc-result-title-middle" id="calc3_rooms">0</p>
                                 <p class="v2-calc-result-title-right"></p>
                             </div>
                             <div class="v2-calc-result-item">
                                 <p class="v2-calc-result-title-left">Санузлы</p>
-                                <p class="v2-calc-result-title-middle">2</p>
+                                <p class="v2-calc-result-title-middle" id="calc3_bathroom">1</p>
                                 <p class="v2-calc-result-title-right"></p>
                             </div>
                             <div class="v2-calc-result-item">
                                 <p class="v2-calc-result-title-left">Площадь</p>
-                                <p class="v2-calc-result-title-middle">56</p>
-                                <p class="v2-calc-result-title-right">6 020 ₽</p>
+                                <p class="v2-calc-result-title-middle" id="calc3_area">5</p>
+                                <p class="v2-calc-result-title-right"><span id="calc3_area_price">0</span> ₽</p>
                             </div>
                             <div class="v2-calc-result-item">
                                 <p class="v2-calc-result-title-left">Окно (1 створка)</p>
-                                <p class="v2-calc-result-title-middle">1</p>
-                                <p class="v2-calc-result-title-right">400 ₽</p>
+                                <p class="v2-calc-result-title-middle" id="calc3_w1">0</p>
+                                <p class="v2-calc-result-title-right"><span id="calc3_w1_price">0</span> ₽</p>
                             </div>
                             <div class="v2-calc-result-item">
                                 <p class="v2-calc-result-title-left">Окно (2 створки)</p>
-                                <p class="v2-calc-result-title-middle">1</p>
-                                <p class="v2-calc-result-title-right">760 ₽</p>
+                                <p class="v2-calc-result-title-middle" id="calc3_w2">0</p>
+                                <p class="v2-calc-result-title-right"><span id="calc3_w2_price">0</span> ₽</p>
                             </div>
                             <div class="v2-calc-result-item">
                                 <p class="v2-calc-result-title-left">Окно (3 створки)</p>
-                                <p class="v2-calc-result-title-middle">1</p>
-                                <p class="v2-calc-result-title-right">0 ₽ </p>
+                                <p class="v2-calc-result-title-middle" id="calc3_w3">0</p>
+                                <p class="v2-calc-result-title-right"><span id="calc3_w3_price">0</span> ₽ </p>
                             </div>
                             <div class="v2-calc-result-item">
                                 <p class="v2-calc-result-title-left">Створки на балконе</p>
-                                <p class="v2-calc-result-title-middle">2</p>
-                                <p class="v2-calc-result-title-right">0 ₽</p>
+                                <p class="v2-calc-result-title-middle" id="calc3_w4">0</p>
+                                <p class="v2-calc-result-title-right"><span id="calc3_w4_price">0</span> ₽</p>
                             </div>
                             <div class="v2-calc-result-item">
                                 <p class="v2-calc-result-title-left">Люстры</p>
-                                <p class="v2-calc-result-title-middle">2</p>
-                                <p class="v2-calc-result-title-right">250 ₽</p>
+                                <p class="v2-calc-result-title-middle" id="calc3_chandeliers">0</p>
+                                <p class="v2-calc-result-title-right"><span id="calc3_chandeliers_price">0</span> ₽</p>
                             </div>
                             <div class="v2-calc-result-item">
                                 <p class="v2-calc-result-title-left">Доп. услуги</p>
-                                <p class="v2-calc-result-title-middle">2</p>
-                                <p class="v2-calc-result-title-right">450 ₽</p>
+                                <p class="v2-calc-result-title-middle" id="calc3_dop">0</p>
+                                <p class="v2-calc-result-title-right"><span id="calc3_dop_price">0</span> ₽</p>
                             </div>
                             <div class="v2-calc-result-bottom">
                                 <p>Итого:</p>
-                                <p>7 330 ₽</p>
+                                <p><span>0</span> ₽</p>
+                                <input type="hidden" name="calc3-full" value="0">
                             </div>
                         </div>
                     </div>
