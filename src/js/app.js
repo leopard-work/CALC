@@ -1,23 +1,23 @@
-import 'reset-css';
-import 'inputmask';
+//import 'reset-css';
+//import 'inputmask';
 import 'air-datepicker';
-import 'inputmask/dist/jquery.inputmask.min';
+//import 'inputmask/dist/jquery.inputmask.min';
 import 'air-datepicker/dist/css/datepicker.min.css';
-import 'jquery-form-styler/dist/jquery.formstyler.css';
-import '../css/jquery.formstyler.theme.css';
+//import 'jquery-form-styler/dist/jquery.formstyler.css';
+//import '../css/jquery.formstyler.theme.css';
 import 'jquery-form-styler/dist/jquery.formstyler.theme.css';
-require('./jquery.formstyler.min.js');
+//require('./jquery.formstyler.min.js');
 
 
 
 $(document).ready(function () {
-    $('input[name=phone]').inputmask("+7 (999) 999-9999");
-    $('input[type=checkbox], select').styler();
+    //$('input[name=phone]').inputmask("+7 (999) 999-9999");
+    //$('input[type=checkbox], select').styler();
     $('.v2-calc-date').datepicker({
         minDate: new Date()
     });
 
-    $('.v2-calc-plus').click(function(e) {
+    /*$('.v2-calc-plus').click(function(e) {
         e.preventDefault();
         var val=$(this).parent().find('input').val()*1;
         var name=$(this).parent().find('input').attr('name');
@@ -61,7 +61,7 @@ $(document).ready(function () {
         $(this).parent().find('input').val(val);
         calc3();
     });
-    $('.v2-calc select').change(function() {
+    $('.v2-calc-select').change(function() {
         calc3();
     });
     $('.v2-calc input[type=checkbox]').change(function() {
@@ -163,15 +163,15 @@ $(document).ready(function () {
             fprice+=350;
         }
         if (f8) {
-            res+=0;
+            res+=800;
             fcount++;
-            fprice+=0;
+            fprice+=800;
         }
         $('#calc3_dop').html(fcount);
         $('#calc3_dop_price').html(fprice);
         $('.v2-calc-result-bottom span').html(res);
         $('input[name=calc3-full]').val(res);
-    }
+    }*/
 });
 
 

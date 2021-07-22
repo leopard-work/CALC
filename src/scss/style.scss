@@ -9,7 +9,7 @@ $gray: #DEDEDE;
 
 $anim: all 0.3s ease-out;
 
-* {
+/** {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -19,7 +19,7 @@ $anim: all 0.3s ease-out;
   width: 1170px;
   padding: 0px 15px 0px 15px;
   margin: 0 auto;
-}
+}*/
 .v2 {
   &-calc {
     font-family: $font1;
@@ -63,6 +63,12 @@ $anim: all 0.3s ease-out;
     margin-bottom: 15px;
   }
   &-calc-select {
+    ul {
+      min-height: auto;
+    }
+    li, li.selected {
+      font-size: 14px;
+    }
     .jq-selectbox__select {
       font-family: $font1;
       font-size: 14px;
@@ -86,6 +92,9 @@ $anim: all 0.3s ease-out;
       .jq-selectbox__trigger-arrow {
         border-top-color: $font1;
       }
+    }
+    .jq-selectbox__select-text {
+      font-size: 14px;
     }
   }
   &-calc-item-btns {
@@ -515,5 +524,10 @@ $anim: all 0.3s ease-out;
 @media (max-width: 1170px) {
   .container {
     width: 100%;
+  }
+}
+.calc3 {
+  .container {
+    position: static;
   }
 }
